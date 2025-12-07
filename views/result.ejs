@@ -11,7 +11,8 @@
     <br>
     <a href="/">Search again</a>
     <script>
-        console.log("Result from DB:", <%= JSON.stringify(result) %>);
+      console.log("Place:", "<%= result.place %>");
+      console.log("Zips:", "<%= result.zips.join(', ') %>");
     </script>
   </body>
 
