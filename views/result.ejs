@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Results</h2>
+    <% if (result) { %>
+      <p><strong>Place:</strong> <%= result.place %></p>
+      <p><strong>ZIP Codes:</strong> <%= result.zips.join(", ") %></p>
+    <% } else { %>
+      <p>No matching results found.</p>
+    <% } %>
+    <br>
+    <a href="/">Search again</a>
+  </body>
+</html>
+
